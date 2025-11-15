@@ -1,0 +1,18 @@
+{
+    "sourceFile": "README.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1763223712944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1763223712944,
+            "name": "Commit-0",
+            "content": "Run the following command to install the WooCommerce API client:\r\ncomposer require automattic/woocommerce\r\n\r\nIn your .env file, add the following WooCommerce API credentials:\r\nWOOCOMMERCE_STORE_URL=https://yourstore.com\r\nWOOCOMMERCE_CONSUMER_KEY=ck_xxxxxxxxxxxxxxxxxxx\r\nWOOCOMMERCE_CONSUMER_SECRET=cs_xxxxxxxxxxxxxxxxxxx\r\nWOOCOMMERCE_VERSION=wc/v3\r\n\r\nCreate the service file \r\napp/Services/WooCommerceService.php\r\n\r\nCreate the controller file\r\napp/Http/Controllers/WooCommerceController.php\r\n\r\nCreate Routes in api.php"
+        }
+    ]
+}

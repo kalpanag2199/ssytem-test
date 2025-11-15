@@ -8,7 +8,7 @@ WOOCOMMERCE_CONSUMER_SECRET=cs_xxxxxxxxxxxxxxxxxxx
 WOOCOMMERCE_VERSION=wc/v3
 
 Create the service file 
-app/Providers/WooCommerceService.php
+app/Services/WooCommerceService.php
 
 Create the controller file
 app/Http/Controllers/WooCommerceController.php
