@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "cc02d573-7bd2-4cb9-8513-199afac2ea69",
+		"name": "WoocomerceAPi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22381939",
+		"_collection_link": "https://cloudy-water-460234.postman.co/workspace/facebook_demo~74d19eb5-ba70-4f5e-a2d1-4cae82b20370/collection/22381939-cc02d573-7bd2-4cb9-8513-199afac2ea69?action=share&source=collection_link&creator=22381939"
+	},
+	"item": [
+		{
+			"name": "getproducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/wc/products",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"wc",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Bike\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/wc/product/7906/update",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"wc",
+						"product",
+						"7906",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "new product 1",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "dhdkhskdj",
+							"type": "text"
+						},
+						{
+							"key": "sku",
+							"value": "KAHAJJ",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/wc/createProduct",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"wc",
+						"createProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Product By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/wc/product/7906",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"wc",
+						"product",
+						"7906"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
